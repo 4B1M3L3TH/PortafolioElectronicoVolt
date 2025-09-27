@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Electrónico - Desarrollo de Volt-Crussaders</title>
+    <link rel="icon" type="image/png" href="Images/icono.png">
+    <script defer src="Scripts/script.js"></script>
+    <link rel="stylesheet" href="Styles/style.css">
+</head>
+<body>
+    <header>
+        <!-- Que estas viendo?, no hay nada -->
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">Volt Crussaders</div>
+                <nav>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#diagrama">Diagrama</a></li>
+                        <li><a href="#codigo">Código</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>Proyecto del desarrollo del Videojuego Volt Crussaders</h1>
+                <p>Diagrama de su estructura de clases y las plantillas de código que se usaran.</p>
+            </div>
+        </section>
+
+        <section id="diagrama" class="diagram-section fade-in">
+            <div class="container">
+                <div class="diagram-container">
+                    <div class="pdf-preview" style="margin: 2rem 0; border: 1px solid #ccc; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+                        <iframe src="Descargas/diagrama_clases.pdf" width="100%" height="500px" style="border: none; background: #f9f9f9;"></iframe>
+                    </div>
+                    <a href="#" class="download-btn" onclick="downloadPDF()">
+                        📥 Descargar PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="codigo" class="container">
+            <div style="text-align: center; margin-bottom: 2rem;">
+                <a href="Descargas/Volt-Crussaders.rar" class="download-btn" download>
+                    📦 Descargar carpeta Volt-Crussaders
+                </a>
+            </div>
+            <!-- Imagen de código 1 -->
+            <div class="image-section fade-in">
+                <h3>Clase del Avatar del juego</h3>
+                <div class="image-container" onclick="toggleImageExpansion(this)">
+                    <div class="image-placeholder"> <img src="Images/codigo1.jpg" alt="Imagen de Código 1" />
+                        <div class="expand-indicator">⇅</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen de código 2 -->
+            <div class="image-section fade-in">
+                <h3>Clase para el dialogo del Avatar</h3>
+                <div class="image-container" onclick="toggleImageExpansion(this)">
+                    <div class="image-placeholder">
+                        <img src="Images/codigo2.jpg" alt="Imagen de Código 2" />
+                        <div class="expand-indicator">⇅</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen de código 3 -->
+            <div class="image-section fade-in">
+                <h3>Clase de la simulacion</h3>
+                <div class="image-container" onclick="toggleImageExpansion(this)">
+                    <div class="image-placeholder">
+                        <img src="Images/codigo3.jpg" alt="Imagen de Código 3" />
+                        <div class="expand-indicator">⇅</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen de código 4 -->
+            <div class="image-section fade-in">
+                <h3>Clase de los elementos del circuito</h3>
+                <div class="image-container" onclick="toggleImageExpansion(this)">
+                    <div class="image-placeholder">
+                        <img src="Images/codigo4.jpg" alt="Imagen de Código 4" />
+                        <div class="expand-indicator">⇅</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Imagen de código 5 -->
+            <div class="image-section fade-in">
+                <h3>Clase de la Bujia</h3>
+                <div class="image-container" onclick="toggleImageExpansion(this)">
+                    <div class="image-placeholder">
+                        <img src="Images/codigo5.jpg" alt="Imagen de Código 5" />
+                        <div class="expand-indicator">⇅</div>
+                    </div>
+                    </div>
+                </div>
+
+                <div class="image-section fade-in">
+                <h3>Clase de la Bateria</h3>
+                <div class="image-container" onclick="toggleImageExpansion(this)">
+                    <div class="image-placeholder">
+                        <img src="Images/codigo6.jpg" alt="Imagen de Código 5" />
+                        <div class="expand-indicator">⇅</div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container">
+            <p>&copy; 2025 Volt Crussaders.</p>
+        </div>
+    </footer>
+</body>
+</html>
